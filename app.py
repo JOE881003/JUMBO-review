@@ -222,6 +222,14 @@ if page == "題目一: 抽獎遊戲":
         c2.metric("總得獎次數", state.total_wins)
         c3.metric("目前連續沒中獎", state.lose_count)
         c4.metric("上一抽是否中獎", "是" if state.just_won else "否")
+        st.markdown("---")
+        st.subheader("抽獎機率流程圖")
+
+        st.image(
+            "image/JUMBO.drawio.png",
+            caption="抽獎規則流程圖（保底 + 動態倍率邏輯）",
+            use_container_width=True
+        )
 
     # ---------- Tab 2：大量模擬 ----------
     with tab2:
