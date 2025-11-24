@@ -175,7 +175,7 @@ page = st.sidebar.radio(
 # 頁面一：抽獎遊戲（原本的兩個 tab）
 # =========================
 if page == "題目一: 抽獎遊戲":
-    st.title("抽獎機率設計 Demo")
+    st.title("題目一: 抽獎遊戲")
 
     tab1, tab2 = st.tabs(["即時抽獎", "大量模擬"])
 
